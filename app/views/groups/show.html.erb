@@ -15,9 +15,15 @@
         <p><%= link_to @group.weburl, :target => "_blank" %></p>
       </div>
       <div class="socialmedia">
-        <%= link_to image_tag('fblogo.png'), @group.fburl, :target => "_blank" %> | 
-        <%= link_to image_tag('twitterlogo.png'), @group.twitterurl, :target => "_blank" %> | 
-        <%= link_to image_tag('ytlogo.png'), @group.youtubeurl, :target => "_blank" %>
+        <% if @group.fburl != '' %>
+          <%= link_to image_tag('fblogo.png'), @group.fburl, :target => "_blank" %> | 
+        <% end %>
+        <% if @group.twitterurl != '' %>
+          <%= link_to image_tag('twitterlogo.png'), @group.twitterurl, :target => "_blank" %> | 
+        <% end %>
+        <% if @group.youtubeurl != '' %>
+          <%= link_to image_tag('ytlogo.png'), @group.youtubeurl, :target => "_blank" %>
+        <% end %>
       </div>
     </div>
     <div class="span6 offset 4">

@@ -9,4 +9,6 @@ class Group < ActiveRecord::Base
   validates :style, presence: true
   validates_attachment :logo, content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif']},
   														size: { less_than: 5.megabytes }
+
+  
 end
