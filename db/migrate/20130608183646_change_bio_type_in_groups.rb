@@ -1,6 +1,6 @@
 class ChangeBioTypeInGroups < ActiveRecord::Migration
   def up
-  	change_column :groups, :bio, :text, :limit => nil
+  	change_column :groups, :bio, :text
   end
 
   def down

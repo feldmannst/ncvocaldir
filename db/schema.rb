@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(:version => 20130608183646) do
     t.string   "location"
     t.string   "size"
     t.string   "style"
-    t.text     "bio"
+    t.text     "bio",               :limit => 255
     t.string   "weburl"
     t.string   "fburl"
     t.string   "twitterurl"
     t.string   "youtubeurl"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
     t.string   "logo_file_name"
     t.string   "logo_content_type"
     t.integer  "logo_file_size"
