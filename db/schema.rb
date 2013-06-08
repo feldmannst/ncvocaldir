@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130608172749) do
+ActiveRecord::Schema.define(:version => 20130608183646) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
     t.string   "location"
     t.string   "size"
     t.string   "style"
-    t.string   "bio"
+    t.text     "bio"
     t.string   "weburl"
     t.string   "fburl"
     t.string   "twitterurl"

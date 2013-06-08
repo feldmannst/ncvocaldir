@@ -1,11 +1,13 @@
 class Group < ActiveRecord::Base
   attr_accessible :name, :location, :size, :style, :bio, :fburl, :twitterurl, :weburl, :youtubeurl, :logo
 
-  has_attached_file :logo, styles: { medium: "320x240>", thumb: "100x100#" }
+  has_attached_file :logo, styles: { medium: "320x240>", thumb: "50x50>" }
 
   validates :name, presence: true
   validates :location, presence: true
-  validates :bio, presence: true, length: { maximum: 600 }
+  validates :size, presence: true
+  validates :style, presence: true
+  validates :bio
   validates_attachment :logo, content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png', 'image/gif']},
   														size: { less_than: 5.megabytes }
 end
