@@ -29,5 +29,9 @@ describe "Pages" do
   	page.should have_selector 'title', text: full_title('')
     click_link "Learn More"
     page.should have_selector 'title', text: full_title("About")
+    click_link "Groups"
+    page.should have_selector 'title', text: full_title("Groups")
+    click_link "View Groups"
+    page.should have_selector 'title', text: full_title("Groups")
   end
 end

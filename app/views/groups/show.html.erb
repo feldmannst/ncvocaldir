@@ -1,0 +1,27 @@
+<% provide(:title, @group.name) %>
+<div class="container">
+  <div class="row">
+    <div class="span4">
+     <%= image_tag @group.logo(:medium) %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <div class="infobox">
+        <h2><%= @group.name %></h2>
+        <p><%= @group.location %></p>
+        <p><%= @group.size %></p>
+        <p><%= @group.style %></p>
+        <p><%= link_to @group.weburl, :target => "_blank" %></p>
+      </div>
+      <div class="socialmedia">
+        <%= link_to image_tag('fblogo.png'), @group.fburl, :target => "_blank" %> | 
+        <%= link_to image_tag('twitterlogo.png'), @group.twitterurl, :target => "_blank" %> | 
+        <%= link_to image_tag('ytlogo.png'), @group.youtubeurl, :target => "_blank" %>
+      </div>
+    </div>
+    <div class="span6 offset 4">
+      <p><%= @group.bio %></p>
+    </div>
+  </div>
+</div>

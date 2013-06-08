@@ -22,3 +22,26 @@ body {
 		max-width: 800px;
 	}
 }
+
+.infobox {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #9BD1FA;
+	padding: 15px;
+	p {
+		font-size: 1.5em;
+		font-style: bold;
+	}
+}
+
+.groupname {
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	font-size: 4em;
+	font-style: uppercase;
+}
+
+.socialmedia {
+	margin-top: 15px;
+}
