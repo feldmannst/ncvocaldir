@@ -5,16 +5,17 @@
   <div class="container">
     <div class="span4">
       <%= f.input :name, label: "Name" %>
+      <%= f.input :grouptype, label: "Type" %>
       <%= f.input :location, label: "Location" %>
       <%= f.input :size, label: "Size" %>
       <%= f.input :style, label: "Style" %>
-      <%= f.input :logo, label: "Upload Logo" %>
     </div>
     <div class="span4">
       <%= f.input :weburl, label: "Website" %>
       <%= f.input :fburl, label: "Facebook" %>
       <%= f.input :twitterurl, label: "Twitter" %>
       <%= f.input :youtubeurl, label: "Youtube" %>
+      <%= f.input :logo, label: "Upload Logo" %>
     </div>
     <div class="span8">
       <%= f.input :bio, label: "Bio", as: :text, input_html: { rows: "3", width: "100%" } %>

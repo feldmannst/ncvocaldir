@@ -2,7 +2,6 @@
 # require 'active_enum/form_helpers/formtastic'  # for Formtastic <2
 # require 'active_enum/form_helpers/formtastic2' # for Formtastic 2.x
 require 'active_enum/form_helpers/simple_form'
-
 ActiveEnum.setup do |config|
 
   # Extend classes to add enumerate method
@@ -13,6 +12,7 @@ ActiveEnum.setup do |config|
 
   # Storage of values (:memory, :i18n)
   # config.storage = :memory
+
 end
 
 ActiveEnum.define do
