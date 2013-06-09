@@ -9,9 +9,9 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'paperclip', '~> 3.0'
+gem 'active_enum'
 
 group :production do
-	gem 'rake', '0.8.7'
 	gem 'pg'
 end
 
